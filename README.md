@@ -82,4 +82,4 @@ next: any
 <h4 id="license">License</h4>
 <p>This project is licensed under the MIT License.</p>
 <h4 id="version">Version</h4>
-<p>1.0.7</p>
+<p>1.1.0</p>

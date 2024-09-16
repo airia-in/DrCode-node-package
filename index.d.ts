@@ -1,5 +1,3 @@
-import { Severity } from "@sentry/node";
-
 interface DrCodeConfig {
   publicKey: string;
   projectId: string;
@@ -14,7 +12,7 @@ declare class DrCode {
 
   static errorHandler(err: Error, req: any, res: any, next: any): void;
 
-  captureMessage(message: string, level?: Severity): void;
+  captureMessage(message: string, level?: string): void;
 
   captureException(error: Error): void;
 }
