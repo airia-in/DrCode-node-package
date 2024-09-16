@@ -1,6 +1,6 @@
 interface DrCodeConfig {
   publicKey: string;
-  projectId: string;
+  projectId: number;
   tracesSampleRate?: number;
   profilesSampleRate?: number;
 }
