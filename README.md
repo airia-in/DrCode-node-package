@@ -1,17 +1,17 @@
-<h3 id="drcode-wrapper">drcode-node</h3>
+<h3 id="drcode-node">drcode-node</h3>
 <p><strong>drcode-node</strong> is a Node.js package that facilitates error tracking and performance monitoring for your applications. Utilizing the DrCode package internally, drcode-node collects and processes application logs to provide detailed insights into errors and performance issues. With this package, you can easily integrate error tracking into your Node.js applications, helping you to maintain optimal performance and quickly address issues.</p>
 <h4 id="installation">Installation</h4>
 <p>To install the package, run:</p>
 <p>bash</p>
 <p>Copy code</p>
-<pre><code class="language-const">npm i @drcode.ai/drcode-node </code></pre>
+<pre><code class="language-const">npm i drcode-node </code></pre>
 
 <h4 id="getting-started">Getting Started</h4>
 <p><strong>Basic Usage</strong></p>
 <p>javascript</p>
 <p>Copy code</p>
 <pre><code class="language-const">
-const { initDrcode, setUpErrorHandler } = require('@drcode.ai/drcode-node');
+const { initDrcode, setUpErrorHandler } = require('drcode-node');
 const express = require('express');
 
 const config = {
@@ -21,7 +21,7 @@ tracesSampleRate: 1.0, // optional
 profilesSampleRate: 1.0 // optional
 };
 
-// Initialize drcode-wrapper
+// Initialize drcode-node
 initDrcode(config);
 
 // Express.js example for setting up error handler
@@ -82,4 +82,4 @@ next: any
 <h4 id="license">License</h4>
 <p>This project is licensed under the MIT License.</p>
 <h4 id="version">Version</h4>
-<p>1.1.2</p>
+<p>1.0.0</p>

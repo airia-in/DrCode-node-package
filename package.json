@@ -1,7 +1,7 @@
 {
-  "name": "@drcode.ai/drcode-node",
-  "version": "1.1.2",
-  "description": "A wrapper for Sentry that simplifies DSN configuration and error handling.",
+  "name": "drcode-node",
+  "version": "1.0.0",
+  "description": "A drcode-node is a Node.js package that facilitates error tracking and performance monitoring for your applications. Utilizing the sentry package internally, drcode-node collects and processes application logs to provide detailed insights into errors and performance issues. With this package, you can easily integrate error tracking into your Node.js applications, helping you to maintain optimal performance and quickly address issues.",
   "main": "index.js",
   "types": "index.d.ts",
   "scripts": {
