@@ -88,6 +88,18 @@ class DrCode {
   captureException(error: Error): void {
     Sentry.captureException(error);
   }
+
+  // Middleware to automatically catch errors
+  errorHandlingMiddleware() {
+    return (req: Request, res: Response, next: NextFunction) => {
+        try {
+            next();
+        } catch (error) {
+            // Handle the error and pass it to the next error middleware
+            next(error);
+        }
+    };
+  }
 }
 
 export = DrCode;
